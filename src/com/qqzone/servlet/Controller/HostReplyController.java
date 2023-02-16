@@ -25,5 +25,11 @@ public class HostReplyController {
         return "redirect:topic.do?operate=topicDetail&id="+reply_topic_id;
 
     }
+    public String delHostReply(Integer hostReplyId,Integer topicId){
+
+        hostReplyService.delHostReply(hostReplyId);
+
+        return "redirect:topic.do?operate=topicDetail&id="+topicId;
+    }
 
 }
