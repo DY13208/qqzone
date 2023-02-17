@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<beans>
+    <!--这个bean标签的作业是  将来servletpath中涉及的名字对应的是fruit，那么就是FruitController这个类来处理 -->
+    <bean id="userBasicDao" class="com.qqzone.dao.imp.UserBasicDaoImp" />
+    <bean id="topicDao" class="com.qqzone.dao.imp.TopicDaoImp" />
+    <bean id="replyDao" class="com.qqzone.dao.imp.ReplyDaoImp" />
+    <bean id="hostReplyDao" class="com.qqzone.dao.imp.HostReplyDaoImp" />
+
+
+    <bean id="userBasicService" class="com.qqzone.service.impl.UserBasicServiceImp" >
+        <!-- property标签用来表示属性;name表示属性名;ref表示引用其他bean的id值-->
+        <property name="userBasicDao" ref="userBasicDao"/>
+    </bean>
+
+    <bean id="topicService" class="com.qqzone.service.impl.TopicServiceImp" >
+        <!-- property标签用来表示属性;name表示属性名;ref表示引用其他bean的id值-->
+        <property name="topicDao" ref="topicDao"/>
+        <property name="replyService" ref="replyService"/>
+        <property name="userBasicService" ref="userBasicService"/>
+    </bean>
+
+    <bean id="replyService" class="com.qqzone.service.impl.ReplyServiceImp" >
+        <!-- property标签用来表示属性;name表示属性名;ref表示引用其他bean的id值-->
+        <property name="replyDao" ref="replyDao"/>
+        <property name="hostReplyService" ref="hostReplyService"/>
+        <property name="userBasicService" ref="userBasicService"/>
+    </bean>
+
+    <bean id="hostReplyService" class="com.qqzone.service.impl.HostReplyServiceImp" >
+        <!-- property标签用来表示属性;name表示属性名;ref表示引用其他bean的id值-->
+        <property name="hostReplyDao" ref="hostReplyDao"/>
+    </bean>
+
+    <bean id="user" class="com.qqzone.servlet.Controller.UserController">
+          <property name="userBasicService" ref="userBasicService"/>
+            <property name="topicService" ref="topicService" />
+    </bean>
+
+    <bean id="topic" class="com.qqzone.servlet.Controller.TopicController">
+             <property name="topicService" ref="topicService" />
+    </bean>
+    <bean id="hostReply" class="com.qqzone.servlet.Controller.HostReplyController">
+        <property name="hostReplyService" ref="hostReplyService" />
+    </bean>
+
+    <bean id="page" class="com.qqzone.mySpringMvc.PageController"/>
+    <bean id="reply" class="com.qqzone.servlet.Controller.ReplyController">
+        <property name="replyService" ref="replyService" />
+    </bean>
+
+</beans>
+<!--
+1.概念
+HTML : 超文本标记语言XMI
+XML  : 可打展的标记语言
+HTML是XML的一个子禁
+
+2.XML也含三个部分 :
+1) XML声明，而且声明这一行代码必须在XML文件的第一行
+2) DTD 文档类型定义
+3) XML正文
+        -->
+
