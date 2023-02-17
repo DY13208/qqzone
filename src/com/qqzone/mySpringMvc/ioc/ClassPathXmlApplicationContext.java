@@ -1,6 +1,6 @@
 package com.qqzone.mySpringMvc.ioc;
 
-import com.qqzone.Util.StringUtil;
+import com.qqzone.mySpringMvc.Util.StringUtil;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;

@@ -1,9 +1,8 @@
 package com.qqzone.dao.imp;
 
-import com.qqzone.JDBCUtil.getDao;
+import com.qqzone.mySpringMvc.JDBCUtil.getDao;
 import com.qqzone.dao.HostReplyDao;
 import com.qqzone.pojo.HostReply;
-import com.qqzone.pojo.Topic;
 
 /**
  * @author Alitar

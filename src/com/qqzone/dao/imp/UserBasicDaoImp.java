@@ -1,6 +1,6 @@
 package com.qqzone.dao.imp;
 
-import com.qqzone.JDBCUtil.getDao;
+import com.qqzone.mySpringMvc.JDBCUtil.getDao;
 import com.qqzone.dao.UserBasicDao;
 import com.qqzone.pojo.UserBasic;
 

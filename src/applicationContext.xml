@@ -44,7 +44,7 @@
         <property name="hostReplyService" ref="hostReplyService" />
     </bean>
 
-    <bean id="page" class="com.qqzone.servlet.Controller.PageController"/>
+    <bean id="page" class="com.qqzone.mySpringMvc.PageController"/>
     <bean id="reply" class="com.qqzone.servlet.Controller.ReplyController">
         <property name="replyService" ref="replyService" />
     </bean>

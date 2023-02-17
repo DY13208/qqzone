@@ -17,11 +17,12 @@
     <file url="file://$PROJECT_DIR$/lib/thymeleaf_lib" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/applicationContext.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/c3p0-config.xml" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/com/qqzone/JDBCUtil/BaseDAO.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/com/qqzone/JDBCUtil/JdbcDbUtils.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/com/qqzone/JDBCUtil/getDao.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/com/qqzone/Util/ConnectionUtil.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/com/qqzone/Util/StringUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/qqzone/mySpringMvc/DispatcherServlet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/qqzone/mySpringMvc/JDBCUtil/BaseDAO.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/qqzone/mySpringMvc/JDBCUtil/JdbcDbUtils.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/qqzone/mySpringMvc/JDBCUtil/getDao.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/qqzone/mySpringMvc/Util/ConnectionUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/qqzone/mySpringMvc/Util/StringUtil.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/qqzone/mySpringMvc/ViewBaseServlet.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/qqzone/mySpringMvc/filters/CharacterEncodingFilters.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/qqzone/mySpringMvc/filters/OpenSessionInViewFilter.java" charset="GBK" />
@@ -32,7 +33,6 @@
     <file url="file://$PROJECT_DIR$/src/com/qqzone/service/FruitService.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/qqzone/service/impl/FruitImpService.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/qqzone/servlet/Controller/FruitController.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/com/qqzone/servlet/DispatcherServlet.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/dbcp.properties" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/druid.properties" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/jdbc.properties" charset="GBK" />

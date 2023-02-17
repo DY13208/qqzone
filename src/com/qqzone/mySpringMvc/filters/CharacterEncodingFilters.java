@@ -1,7 +1,7 @@
 package com.qqzone.mySpringMvc.filters;
 
 
-import com.qqzone.Util.StringUtil;
+import com.qqzone.mySpringMvc.Util.StringUtil;
 
 import javax.servlet.*;
 import java.io.IOException;

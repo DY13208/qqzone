@@ -2,7 +2,7 @@ package com.qqzone.mySpringMvc.trans;
 
 
 
-import com.qqzone.Util.ConnectionUtil;
+import com.qqzone.mySpringMvc.Util.ConnectionUtil;
 
 import java.sql.SQLException;
 
